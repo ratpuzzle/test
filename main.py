@@ -19,30 +19,22 @@ hp = 10
 pickaxe = None  # ='алмазна'   ='каменная'
 
 
-start_loc()
+start_loc(def_main, def_shop, def_tavern, def_lumber_mill)
 
 
 
 
 
 text_field = tk.Label(text='Приветствую вас в  деревне....', width=56, height=15, bg='yellow')
-text_field.grid(row=5)
+text_field.grid(row=0)
 time.sleep(0)
 text_field = tk.Label(text='Вы играете за персонажа....', width=56, height=15, bg='yellow')
-text_field.grid(row=5)
+text_field.grid(row=0)
 time.sleep(0)
 
 while True:
     if gold <= -5:
-        def_killer()
-        text_field = tk.Label(text='ВЫ будете арестованы и отправленны в тюрьму до уплаты долгов', width=56, height=15,
-                              bg='yellow')
-        text_field.grid(row=5)
-        time.sleep(2)
-
-        button_prison = tk.Button(text='Поехали', bg='pink', command=lambda: [def_killer(), def_lumber_mill])
-        button_prison.grid(column=0, row=4)
-        button_prison.bind("<Button-1>", def_prison)
+        pass
     elif hp <= 0:
 
         gold -= 10
