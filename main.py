@@ -1,4 +1,7 @@
 import time
+import time
+import time
+import time
 import random
 import tkinter as tk
 
